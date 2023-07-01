@@ -16,6 +16,7 @@
     }
     
     h1 {
+      color: #0b0238;
       font-size: clamp(70px, 10vw, 90px); /* Responsive header size with maximum limit */
       font-weight: normal;
       margin-left: 42x;/*calc(min(2vw + 20px, 140px)); /* Responsive and limited left indentation */
@@ -35,6 +36,7 @@
     }
     
     p {
+      color: #0b0238;
       margin-left: 12vw; /* Responsive and limited left indentation */
       font-size: clamp(18px, 2vw, 25px); /* Responsive paragraph size with maximum limit */
       margin-right: 32vw;
@@ -42,6 +44,7 @@
     }
     
     p:first-of-type {
+      color: #0b0238;
       font-weight: bold; /* Bold first paragraph */
       margin-top: 0vh; /* Responsive margin top */
       margin-right: 32vw; /* Responsive margin right */
@@ -49,6 +52,7 @@
     
 
     ul {
+      color: #0b0238;
       list-style-type: none; /* Remove default bullet points */
       padding: 0; /* Remove default padding */
       margin-top: 7vh; /* Responsive margin top */
@@ -67,7 +71,7 @@
     a {
       text-decoration: none; /* Remove underline */
       font-size: clamp(18px, 2vw, 25px); /* Responsive font size with maximum limit */
-      color: #000; /* Black font color */
+      color: #0b0238; /* Black font color */
     }
     
     .link-arrow::after {
@@ -118,22 +122,31 @@
       }
     }
 
+    a.underline-orange {
+      text-decoration: underline; /* Add underline to links */
+      text-decoration-color: #fd7e1d; /* Set underline color to orange */
+    }
+
+    p.allow-link {
+      margin-right: 28vw;
+    }
+
   </style>
 </head>
 <body>
   
   <div class="content">
-    <h1><span class="header-design"></span>hi, i'm kristian!</h1>
+    <h1><span class="header-design"></span>Hi, I'm Kristian!</h1>
     <p><strong>Dedicated student and developer, passionate to learn and gain experience in software development and product management. </strong></p>
-    <p>Some of my other interests: playing guitar, live music, soccer, pickleball, surfing, and learning French.</p>
-    <p>I am currently enrolled at the University of Florida, where I am studying Computer Engineering with a Minor in Mathematics and a Certification in Artificial Intelligence. I am also interning as a Full Stack Engineer at Black Knight.</p>
+    <p>Some of my other interests include: playing guitar, live music, soccer, pickleball, surfing, and learning French!</p>
+    <p>I am currently enrolled at the <a href="https://www.ufl.edu/" class="underline-orange">University of Florida</a>, where I study Computer Engineering with a Minor in Mathematics and a Certification in Artificial Intelligence. I am also interning as a Full Stack Engineer at <a href="https://www.blackknightinc.com/" class="underline-orange">Black Knight</a>.</p>
     
     <ul>
-      <li><a href="page1.html">my work</a><span class="link-arrow"></span></li>
-      <li><a href="https://www.linkedin.com">resume</a><span class="link-arrow"></span></li>
-      <li><a href="linkedin.com/in/kristianfischer29">linkedin</a><span class="link-arrow"></span></li>
-      <li><a href="github.com/kristianfischer">github</a><span class="link-arrow"></span></li>
-      <li><a href="https://www.linkedin.com">contact me</a><span class="link-arrow"></span></li>
+      <li><a href="page1.html">My Work</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.linkedin.com">Resume</a><span class="link-arrow"></span></li>
+      <li><a href="linkedin.com/in/kristianfischer29">LinkedIn</a><span class="link-arrow"></span></li>
+      <li><a href="github.com/kristianfischer">Github</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.linkedin.com">Contact Me</a><span class="link-arrow"></span></li>
     </ul>
   </div>
 </body>

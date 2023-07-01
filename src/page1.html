@@ -1,49 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Page 1</title>
+  <title>Second Page</title>
   <style>
-    /* Styles for the navigation bar */
+
+    @keyframes scrollText {
+          0% {
+            transform: translateX(0); /* Start from the initial position */
+          }
+          50% {
+            transform: translateX(-50%); /* Scroll text to the left by 100% of its width */
+          }
+          100% {
+            transform: translateX(0); /* Scroll back to the initial position */
+          }
+        }
+
+    /* Other styles */
+    body {
+      background-color: #cfe8ff; /* Baby blue background */
+      font-family: Arial, sans-serif;
+      margin: 0; /* Remove default body margin */
+    }
+    
     nav {
-      background-color: #f1f1f1;
+      background-color: #0b0238; /* Orange background */
       padding: 10px;
       display: flex;
       justify-content: space-between;
     }
     
     nav a {
-      margin-right: 10px;
       text-decoration: none;
-      color: #000;
-      font-weight: bold;
+      color: #ffffff; /* Black font color */
+      font-weight: normal;
+    }
+    
+    .content {
+      padding: 20px;
     }
     
     .work-label {
-      margin-right: 10px;
-      font-weight: bold;
+      font-weight: normal;
+      margin-right: 5vw;
+      color: #ffffff;
     }
     
-    /* Other styles */
-    .content {
-      margin-top: 50px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Display two columns */
+      grid-gap: 20px; /* Add gap between grid items */
+      padding: 0;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+    
+    li {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    a {
+      margin-left: 5vw;
+      display: block; /* Convert the link to a block element */
+      text-decoration: none;
+      text-align: center;
+      color: #000; /* Black font color */
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    a.button {
+      height: 225px;
+      width: 500px;
+      display: block; /* Convert the link to a block element */
+      text-decoration: none;
+      border-width: 1.5px;
+      border-style: solid; /* Specify the border style */
+      border-color: #fd7e1d; /* Orange border color */
+      background-color: rgba(255, 255, 255, 0); /* Transparent white background */
+      padding: 40px 40px; /* Adjust height and width of the squares */
+      color: #000; /* Black font color */
+      font-size: 18px;
+      font-weight: bold;
+      transition: box-shadow 0.3s; /* Add a transition effect for the box shadow */
+      overflow: hidden;
+    }
+
+    a.button:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect on hover */
+    }
+
+
+    a.button:hover p:first-child {
+      animation: scrollText 10s linear infinite; /* Apply the animation to the first paragraph inside the button */
+      white-space: nowrap; /* Prevent line breaks in the text */
+    }
+
+    @media (max-width: 925px) {
+      ul {
+        grid-template-columns: 1fr; /* Display a single column */
+        overflow: hidden;
+      }
+    }
+
+    p.scroll {
+      text-align: center;
+      margin-top: -1vh;
+      margin-bottom: 7vh;
+      font-size: 25px;
+    }
+
+    h2 {
+      text-align: start;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html">Kristian Fischer</a>
     <span class="work-label">Work</span>
   </nav>
   
   <div class="content">
-    <h1>Page 1</h1>
-    <p>This is the content for Page 1.</p>
-    <p>Please select a page:</p>
     <ul>
-      <li><a href="page2.html">Page 2</a></li>
-      <li><a href="page3.html">Page 3</a></li>
-      <li><a href="page4.html">Page 4</a></li>
-      <li><a href="page5.html">Page 5</a></li>
+      <li>
+        <a href="page2.html" class="button">
+          <p class="scroll">First paragraph</p>
+          <h2>Header</h2>
+          <p>Second paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="page3.html" class="button">
+          <p class="scroll">First paragraph</p>
+          <h2>Header</h2>
+          <p>Second paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="page4.html" class="button">
+          <p class="scroll">First paragraph</p>
+          <h2>Header</h2>
+          <p>Second paragraph</p>
+        </a>
+      </li>
+      <li>
+        <a href="page5.html" class="button">
+          <p class="scroll">First paragraph</p>
+          <h2>Header</h2>
+          <p>Second paragraph</p>
+        </a>
+      </li>
     </ul>
   </div>
 </body>
