@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    /* Other styles */
+    .content {
+      margin-top: 10vh;
+      padding: 20px;
+    }
+    
+    /* Additional styles */
+    body {
+      background-color: #cfe8ff; /* Baby blue background */
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      font-size: clamp(70px, 10vw, 90px); /* Responsive header size with maximum limit */
+      font-weight: normal;
+      margin-left: 42x;/*calc(min(2vw + 20px, 140px)); /* Responsive and limited left indentation */
+      margin-right: 35vw; /* Reset margin right */
+      display: inline-block; /* Allow overflow and new line */
+      word-wrap: break-word; /* Allow word wrap for overflow */
+    }
+    
+    .header-design {
+      width: 125px; /* Responsive design width */
+      height: 91px; /* Responsive design height */
+      background-image: url('../assets/design.png'); /* Replace 'your-image.png' with the path to your PNG image */
+      background-size: cover; /* Adjust image size to fit the container */
+      display: inline-block;
+      margin-right: 10px; /* Space to the right of the header */
+      margin-left: 42px;
+    }
+    
+    p {
+      margin-left: 12vw; /* Responsive and limited left indentation */
+      font-size: clamp(18px, 2vw, 25px); /* Responsive paragraph size with maximum limit */
+      margin-right: 32vw;
+      margin-top: 40px;
+    }
+    
+    p:first-of-type {
+      font-weight: bold; /* Bold first paragraph */
+      margin-top: 0vh; /* Responsive margin top */
+      margin-right: 32vw; /* Responsive margin right */
+    }
+    
+
+    ul {
+      list-style-type: none; /* Remove default bullet points */
+      padding: 0; /* Remove default padding */
+      margin-top: 7vh; /* Responsive margin top */
+      margin-left: 12vw; /* Responsive and limited left indentation */
+      margin-right: 30vw; /* Responsive margin right */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+      grid-gap: 15px;
+    }
+    
+    li {
+      display: flex;
+      align-items: center;
+    }
+    
+    a {
+      text-decoration: none; /* Remove underline */
+      font-size: clamp(18px, 2vw, 25px); /* Responsive font size with maximum limit */
+      color: #000; /* Black font color */
+    }
+    
+    .link-arrow::after {
+      color: #fd7e1d;
+      font-size: clamp(20px, 2vw, 30px); /* Responsive arrow size with maximum limit */
+      content: "→"; /* Arrow after the link */
+      margin-left: 5px; /* Space between link and arrow */
+      transition: margin-left 0.3s; /* Transition effect */
+      font-weight: bolder;
+    }
+    
+    a:hover {
+      font-weight: bold; /* Bold link on hover */
+    }
+    
+    a:hover .link-arrow::after {
+      margin-left: 20px; /* Increase space between link and arrow on hover */
+    }
+
+    @media (max-width: 1400px) {
+      h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 7vw; /* Remove left margin */
+        margin-bottom: 10px; /* Add some space between lines */
+      }
+
+      .header-design {
+        display: block;
+        margin: 0 auto 10px; /* Center the design and add space below */
+        margin-left: 0px;
+      }
+
+      .content {
+      margin-top: -4vh;
+    }
+
+    p,
+    p:first-of-type {
+        margin-right: 9vw; /* Reset margin right */
+        margin-top: 4vh;
+        margin-left: 7vw;
+      }
+      ul {
+        margin-right: 5vw; /* Responsive margin right */
+        margin-left: 7vw;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="content">
+    <h1><span class="header-design"></span>hi, i'm kristian!</h1>
+    <p><strong>Dedicated student and developer, passionate to learn and gain experience in software development and product management. </strong></p>
+    <p>Some of my other interests: playing guitar, live music, soccer, pickleball, surfing, and learning French.</p>
+    <p>I am currently enrolled at the University of Florida, where I am studying Computer Engineering with a Minor in Mathematics and a Certification in Artificial Intelligence. I am also interning as a Full Stack Engineer at Black Knight.</p>
+    
+    <ul>
+      <li><a href="page1.html">my work</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.linkedin.com">resume</a><span class="link-arrow"></span></li>
+      <li><a href="linkedin.com/in/kristianfischer29">linkedin</a><span class="link-arrow"></span></li>
+      <li><a href="github.com/kristianfischer">github</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.linkedin.com">contact me</a><span class="link-arrow"></span></li>
+    </ul>
+  </div>
+</body>
+</html>
