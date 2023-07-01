@@ -4,36 +4,141 @@
   <title>Page 2</title>
   <style>
     /* Styles for the navigation bar */
+    body {
+      background-color: #cfe8ff; /* Baby blue background */
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 0; /* Remove default body margin */
+    }
+    
     nav {
-      background-color: #f1f1f1;
+      background-color: #0b0238; /* Orange background */
       padding: 10px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+
+    .name-and-label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
     
     nav a {
-      margin-right: 10px;
       text-decoration: none;
-      color: #000;
-      font-weight: bold;
+      color: #fd7e1d; /* Black font color */
+      font-weight: normal;
+      margin-right: 3.2vw;
+    }
+
+    
+    .content {
+      padding: 20px;
+    }
+
+    .header-design {
+      margin-top: 5px;
+      width: 80px; /* Responsive design width */
+      height: 40px; /* Responsive design height */
+      background-image: url('../assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
+      background-size: cover; /* Adjust image size to fit the container */
+      display: inline-block;
+      margin-right: 10px; /* Space to the right of the header */
+      margin-left: 5px;
     }
     
-    /* Other styles */
-    .content {
-      margin-top: 50px;
+    .work-label {
+      font-weight: normal;
+      font-size: 20px;
+      color: #ffffff;
+      margin-top: 3px;
+      margin-right: 3.2vw;
     }
+
+    a {
+      font-size: 20px;
+      margin-left: 2.7vw;
+      margin-right: 1vw;
+      display: inline-block; /* Display links horizontally */
+      text-decoration: none;
+      text-align: center;
+      color: #000; /* Black font color */
+      font-weight: bold;
+    }
+
+    a.rlinks {
+      font-size: 14px;
+      text-decoration: none;
+      color: #fd7e1d; /* Black font color */
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #0b0238; 
+      margin-left: 2.7vw;
+      font-size: 70px;
+    }
+
+    h2 {
+      color: #0b0238; 
+      margin-left: 2.7vw;
+      font-size: 40px;
+    }
+
+    p {
+      color: #0b0238;
+      margin-left: 2.7vw;
+    }
+
+    .back-link {
+      text-decoration: none;
+      width: 175px;
+      color: #0b0238;
+      display: flex;
+      font-weight: normal;
+      align-items: center;
+      font-size: clamp(10px, 2vw, 20px);
+    }
+
+    .back-link::before {
+      content: '\2190'; /* Unicode character for left arrow */
+      color: #fd7e1d;
+      font-size: clamp(20px, 2vw, 30px); /* Responsive arrow size with maximum limit */
+      font-weight: bolder;
+      margin-right: 5px;
+    }
+
+    a.back-link:hover {
+      font-weight: bold; /* Bold link on hover */
+      font-size: clamp(9px, 2vw, 19px);
+    }
+
+    a.back-link:hover::after {
+      margin-right: 20px; /* Increase space between link and arrow on hover */
+    }
+
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="page1.html">Back to Page 1</a>
+    <a href="index.html"><span class="header-design"></span></a>
+    <div class="name-and-label">
+      <a href="index.html">Kristian Fischer</a>
+      <a href="index.html">Work</a>
+    </div>
   </nav>
   
   <div class="content">
-    <h1>Page 2</h1>
-    <p>This is the content for Page 2.</p>
-    <a href="page1.html">Back to Page 1</a>
+    <a href="page1.html" class="back-link">Back to work</a>
+    <h1>Contacted</h1>
+    <h2>Contact Resource Manager</h2>
+    <p>
+      <span style="margin-right: 5px;">Related Links:</span>
+      <a href="https://www.github.com/kristianfischer/contacted" target="_blank" class="rlinks">Github</a>
+      <a href="" class="rlinks">Coming Soon to App Store</a>
+    </p>
+    <p>This CRM application is an all encompassing experience for reaching out and maintaining connections with professional, family, and friendly contacts. Using the OAuth2 API, all users may sign in with their Google Account. Users may import contacts from their phone or enter them manually, adding additional information to create a well rounded character which can be used to create more personal messages. Integrated with Google's PaLM2 API, Contacted utilizes its large language model to auto generate messages that the user may send to any contact in the application. The user may also dictate a time frequency, after which they will be reminded via push notifications that they should leave a friendly message to that person. A user may send messages straight from the application, or copy paste a message to a third party app.</p>
+    
   </div>
 </body>
 </html>

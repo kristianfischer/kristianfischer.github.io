@@ -12,12 +12,12 @@
     /* Additional styles */
     body {
       background-color: #cfe8ff; /* Baby blue background */
-      font-family: Arial, sans-serif;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     
     h1 {
       color: #0b0238;
-      font-size: clamp(70px, 10vw, 90px); /* Responsive header size with maximum limit */
+      font-size: 90px; /* Responsive header size with maximum limit */
       font-weight: normal;
       margin-left: 42x;/*calc(min(2vw + 20px, 140px)); /* Responsive and limited left indentation */
       margin-right: 35vw; /* Reset margin right */
@@ -26,13 +26,13 @@
     }
     
     .header-design {
-      width: 125px; /* Responsive design width */
+      width: 145px; /* Responsive design width */
       height: 91px; /* Responsive design height */
       background-image: url('../assets/design.png'); /* Replace 'your-image.png' with the path to your PNG image */
       background-size: cover; /* Adjust image size to fit the container */
       display: inline-block;
       margin-right: 10px; /* Space to the right of the header */
-      margin-left: 42px;
+      margin-left: 25px;
     }
     
     p {
@@ -60,7 +60,7 @@
       margin-right: 30vw; /* Responsive margin right */
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-      grid-gap: 15px;
+      grid-gap: 2vh;
     }
     
     li {
@@ -93,6 +93,7 @@
 
     @media (max-width: 1400px) {
       h1 {
+        font-size: 90px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -107,7 +108,7 @@
       }
 
       .content {
-      margin-top: -4vh;
+      margin-top: 2vh;
     }
 
     p,
@@ -139,13 +140,13 @@
     <h1><span class="header-design"></span>Hi, I'm Kristian!</h1>
     <p><strong>Dedicated student and developer, passionate to learn and gain experience in software development and product management. </strong></p>
     <p>Some of my other interests include: playing guitar, live music, soccer, pickleball, surfing, and learning French!</p>
-    <p>I am currently enrolled at the <a href="https://www.ufl.edu/" class="underline-orange">University of Florida</a>, where I study Computer Engineering with a Minor in Mathematics and a Certification in Artificial Intelligence. I am also interning as a Full Stack Engineer at <a href="https://www.blackknightinc.com/" class="underline-orange">Black Knight</a>.</p>
+    <p>I am currently enrolled at the <a href="https://www.ufl.edu/" class="underline-orange">University of Florida</a>, where I study Computer Engineering with a Minor in Mathematics and a Certification in Artificial Intelligence. I am also interning as a Full Stack Developer at <a href="https://www.blackknightinc.com/" class="underline-orange">Black Knight</a>.</p>
     
     <ul>
       <li><a href="page1.html">My Work</a><span class="link-arrow"></span></li>
       <li><a href="https://www.linkedin.com">Resume</a><span class="link-arrow"></span></li>
-      <li><a href="linkedin.com/in/kristianfischer29">LinkedIn</a><span class="link-arrow"></span></li>
-      <li><a href="github.com/kristianfischer">Github</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.linkedin.com/in/kristianfischer29">LinkedIn</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.github.com/kristianfischer">Github</a><span class="link-arrow"></span></li>
       <li><a href="https://www.linkedin.com">Contact Me</a><span class="link-arrow"></span></li>
     </ul>
   </div>
