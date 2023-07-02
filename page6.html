@@ -68,7 +68,7 @@
 
 
     a.rlinks {
-      font-size: 14px;
+      font-size: 20px;
       text-decoration: none;
       color: #fd7e1d; /* Black font color */
       font-weight: bold;
@@ -80,15 +80,40 @@
       font-size: 70px;
     }
 
+    .name-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 13vw;
+      margin-top: -15vh;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
     h2 {
       color: #0b0238; 
       margin-left: 2.7vw;
       font-size: 40px;
     }
 
+    h3 {
+      color: #0b0238; 
+      margin-left: 2.7vw;
+      font-size: 30px;
+      margin-top: 5vh;
+    }
+
     p {
       color: #0b0238;
       margin-left: 2.7vw;
+    }
+
+    p.bio {
+      color: #0b0238;
+      margin-left: 2.7vw;
+      margin-right: 10vw;
+      font-size: 20px;
     }
 
     .back-link {
@@ -131,14 +156,19 @@
   
   <div class="content">
     <a href="page1.html" class="back-link">Back to work</a>
-    <h1>Women in Electrical and Computer Engineering</h1>
-    <h2>Website</h2>
+    <h1>ChatGPT Survey</h1>
+    <div class="name-list">
+      <span style="color: #fd7e1d;">Qualtrics</span>
+      <span style="color: #fd7e1d;">Data Synthesis</span>
+      <span style="color: #fd7e1d;">Undergrad Research · Mentorship</span>
+    </div>
+    <h2>Climate Survey</h2>
     <p>
-      <span style="margin-right: 5px;">Related Links:</span>
-      <a href="https://www.github.com/ufwece" target="_blank" class="rlinks">Still in Development</a>
+      <span style="margin-right: 5px; font-size: 20px;">Related Links:</span>
+      <a href="https://ufl.qualtrics.com/jfe/form/SV_9v4ZZKLnX9UVAfY" target="_blank" class="rlinks">Survey</a>
     </p>
-    <p>This CRM application is an all encompassing experience for reaching out and maintaining connections with professional, family, and friendly contacts. Using the OAuth2 API, all users may sign in with their Google Account. Users may import contacts from their phone or enter them manually, adding additional information to create a well rounded character which can be used to create more personal messages. Integrated with Google's PaLM2 API, Contacted utilizes its large language model to auto generate messages that the user may send to any contact in the application. The user may also dictate a time frequency, after which they will be reminded via push notifications that they should leave a friendly message to that person. A user may send messages straight from the application, or copy paste a message to a third party app.</p>
-    
+    <p class="bio">This CRM application is an all encompassing experience for reaching out and maintaining connections with professional, family, and friendly contacts. Using the OAuth2 API, all users may sign in with their Google Account. Users may import contacts from their phone or enter them manually, adding additional information to create a well rounded character which can be used to create more personal messages. Integrated with Google's PaLM2 API, Contacted utilizes its large language model to auto generate messages that the user may send to any contact in the application. The user may also dictate a time frequency, after which they will be reminded via push notifications that they should leave a friendly message to that person. A user may send messages straight from the application, or copy paste a message to a third party app.</p>
+    <h3>Media</h3>
   </div>
 </body>
 </html>
