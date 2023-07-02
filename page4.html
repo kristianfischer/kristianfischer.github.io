@@ -40,7 +40,7 @@
       margin-top: 5px;
       width: 80px; /* Responsive design width */
       height: 40px; /* Responsive design height */
-      background-image: url('../assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
+      background-image: url('assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
       background-size: cover; /* Adjust image size to fit the container */
       display: inline-block;
       margin-right: 10px; /* Space to the right of the header */
@@ -143,6 +143,26 @@
       margin-right: 20px; /* Increase space between link and arrow on hover */
     }
 
+    ul.list {
+    margin-left: 2.7vw;
+    margin-right: 14vw;
+    font-size: 20px;
+  }
+
+  ul.list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    color: #0b0238;
+  }
+
+  ul.list li::before {
+    content: "\2022"; /* Bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #0b0238;
+  }
+
   </style>
 </head>
 <body>
@@ -161,14 +181,29 @@
       <span style="color: #fd7e1d;">C++</span>
       <span style="color: #fd7e1d;">Python</span>
       <span style="color: #fd7e1d;">SFML · PyGame</span>
+      <span style="color: #0b0238;">November 2022 - May 2023</span>
     </div>
-    <h2>Classic Puzzle Recreations</h2>
+    <h2 style="margin-top: 0.5vh;">Classic Puzzle Recreations</h2>
     <p>
       <span style="margin-right: 5px; font-size: 20px;">Related Links:</span>
       <a href="https://youtu.be/co4BqyRHYkA" target="_blank" class="rlinks">Minesweeper Demonstration</a>
       <a href="https://youtu.be/co4BqyRHYkA" target="_blank" class="rlinks">Sudoko Demonstration</a>
     </p>
-    <p class="bio">This CRM application is an all encompassing experience for reaching out and maintaining connections with professional, family, and friendly contacts. Using the OAuth2 API, all users may sign in with their Google Account. Users may import contacts from their phone or enter them manually, adding additional information to create a well rounded character which can be used to create more personal messages. Integrated with Google's PaLM2 API, Contacted utilizes its large language model to auto generate messages that the user may send to any contact in the application. The user may also dictate a time frequency, after which they will be reminded via push notifications that they should leave a friendly message to that person. A user may send messages straight from the application, or copy paste a message to a third party app.</p>
+    <p class="bio">A mentored project to recreate Minesweeper and Sudoko, implementing the same mechanics and replicating visual content.</p>
+    <p class="bio" style="margin-top: 5vh;">Minesweeper was replicated with C++'s SFML graphics libray, allowing the user to tactically identify a set amount of mines amongst a board of 400 tiles. Users can choose minecount, time themselves, and see their top scores. Sudoko was created throug Pythons PyGame, and tasks the user with sequencing distinct numbers in a variety of orientations with multiple levels of difficulty.</p>
+    <p class="bio"></p>
+    <h3>Features</h3>
+    <ul class="list">
+      <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://www.sfml-dev.org/" target="_blank" class="rlinks">SFML</a>
+        <span style="text-align: right;">User interface</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://www.pygame.org/news" target="_blank" class="rlinks">PyGame</a>
+        <span style="text-align: right;">User interface</span>
+      </li>
+
+    </ul>
     <h3>Media</h3>
   </div>
 </body>

@@ -40,7 +40,7 @@
       margin-top: 5px;
       width: 80px; /* Responsive design width */
       height: 40px; /* Responsive design height */
-      background-image: url('../assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
+      background-image: url('assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
       background-size: cover; /* Adjust image size to fit the container */
       display: inline-block;
       margin-right: 10px; /* Space to the right of the header */
@@ -143,6 +143,26 @@
       margin-right: 20px; /* Increase space between link and arrow on hover */
     }
 
+    ul.list {
+    margin-left: 2.7vw;
+    margin-right: 14vw;
+    font-size: 20px;
+  }
+
+  ul.list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    color: #0b0238;
+  }
+
+  ul.list li::before {
+    content: "\2022"; /* Bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #0b0238;
+  }
+
   </style>
 </head>
 <body>
@@ -161,14 +181,36 @@
       <span style="color: #fd7e1d;">C++</span>
       <span style="color: #fd7e1d;">Arduino</span>
       <span style="color: #fd7e1d;">IoT · Hardware</span>
+      <span style="color: #0b0238;">May 2023 - Present</span>
     </div>
-    <h2>Self Watering Garden</h2>
+    <h2 style="margin-top: 0.5vh;">Self Watering Garden</h2>
     <p>
       <span style="margin-right: 5px; font-size: 20px;">Related Links:</span>
       <a href="https://www.github.com/kristianfischer/Garduino" target="_blank" class="rlinks">Github</a>
       <a href="https://www.youtube.com/watch?v=9JFduA8OGQ4" target="_blank" class="rlinks">Inspiration</a>
     </p>
-    <p class="bio">This .</p>
+    <p class="bio">This automated garden analyzes and manipulates the soil, maintaining perfect plants in any climate.</p>
+    <p class="bio" style="margin-top: 5vh;">Each day, Garduino reads the moisture of the garden soil with the use of capacative soil moisture sensors. After calibrating the reading to determine whether the soil is below the threshold of 30% moisture, it uses a 5V relay to provide water to the garden, enlisting the help of several water pumps. The garden uses multiple sensors to care for each plant individually, triggering specific pumps to water specific plants. Perfect for a garden of any size!</p>
+    <p class="bio"></p>
+    <h3>Features</h3>
+    <ul class="list">
+      <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://www.arduino.cc/" target="_blank" class="rlinks">Arduino</a>
+        <span style="text-align: right;">Brains of the operation</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://www.amazon.com/s?k=capacitive+soil+moisture+sensor&i=lawngarden&hvadid=580607924847&hvdev=c&hvlocphy=9011555&hvnetw=g&hvqmt=e&hvrand=16723628649705183691&hvtargid=kwd-300053914200&hydadcr=19842_13379597&tag=googhydr-20&ref=pd_sl_4lj0t1l8au_e" target="_blank" class="rlinks">Soil Moisture Sensors</a>
+        <span style="text-align: right;">Daily moisture reading</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://www.amazon.com/s?k=5vdc+relay&hvadid=174298169979&hvdev=c&hvlocphy=9011555&hvnetw=g&hvqmt=e&hvrand=14643197977729314500&hvtargid=kwd-2942495361&hydadcr=19100_9441082&tag=googhydr-20&ref=pd_sl_55d2osqwoz_e" target="_blank" class="rlinks">5V relay</a>
+        <span style="text-align: right;">Power distribution</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://www.amazon.com/Gikfun-Submersible-Fountain-Aquarium-EK1893/dp/B07BHD6KXS/ref=sr_1_2_sspa?crid=1RFPTNUOMWHCI&keywords=mini+water+pump&qid=1688312285&sprefix=mini+water+pump%2Caps%2C110&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="rlinks">Water Pumps</a>
+        <span style="text-align: right;">Irrigation</span>
+      </li>
+    </ul>
     <h3>Media</h3>
   </div>
 </body>

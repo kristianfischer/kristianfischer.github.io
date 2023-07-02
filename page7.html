@@ -40,7 +40,7 @@
       margin-top: 5px;
       width: 80px; /* Responsive design width */
       height: 40px; /* Responsive design height */
-      background-image: url('../assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
+      background-image: url('assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
       background-size: cover; /* Adjust image size to fit the container */
       display: inline-block;
       margin-right: 10px; /* Space to the right of the header */
@@ -142,6 +142,26 @@
       margin-right: 20px; /* Increase space between link and arrow on hover */
     }
 
+    ul.list {
+    margin-left: 2.7vw;
+    margin-right: 14vw;
+    font-size: 20px;
+  }
+
+  ul.list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    color: #0b0238;
+  }
+
+  ul.list li::before {
+    content: "\2022"; /* Bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #0b0238;
+  }
+
   </style>
 </head>
 <body>
@@ -160,13 +180,27 @@
       <span style="color: #fd7e1d;">Dart</span>
       <span style="color: #fd7e1d;">Flutter</span>
       <span style="color: #fd7e1d;">UX/UI Design · Mentorship</span>
+      <span style="color: #0b0238;">May 2022 - August 2022</span>
     </div>
-    <h2>Satirical Productivity Application</h2>
+    <h2 style="margin-top: 0.5vh;">Satirical Productivity Application</h2>
     <p>
       <span style="margin-right: 5px; font-size: 20px;">Related Links:</span>
       <a href="https://www.github.com/kristianfischer/RiceKing" target="_blank" class="rlinks">Github</a>
     </p>
-    <p class="bio">This CRM application is an all encompassing experience for reaching out and maintaining connections with professional, family, and friendly contacts. Using the OAuth2 API, all users may sign in with their Google Account. Users may import contacts from their phone or enter them manually, adding additional information to create a well rounded character which can be used to create more personal messages. Integrated with Google's PaLM2 API, Contacted utilizes its large language model to auto generate messages that the user may send to any contact in the application. The user may also dictate a time frequency, after which they will be reminded via push notifications that they should leave a friendly message to that person. A user may send messages straight from the application, or copy paste a message to a third party app.</p>
+    <p class="bio">This mobile productivity application ensures perfectly cooked rice, every time.</p>
+    <p class="bio" style="margin-top: 5vh;">In planning mode, the user is able to choose the quantity and type of rice they would like to cook. With integrated camera permissions, the user may snap a photograph or "scan" the rice, engaging cooking mode. As the rice cooks, the user can scan to recieve a message from "RiceBot" detailing how far along the rice is in the cooking process. The user will receive a notification when the rice is halfway cooked, and fully cooked. Never again must you panic about over or undercooking your rice, a common worry in the rice cooking community.</p>
+    <p class="bio"></p>
+    <h3>Features</h3>
+    <ul class="list">
+      <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://pub.dev/packages/flutter_local_notifications" target="_blank" class="rlinks">Flutter Notifications</a>
+        <span style="text-align: right;">User engagement</span>
+      </li>
+      <li style="display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://pub.dev/packages/camera" target="_blank" class="rlinks">Flutter Camera</a>
+        <span style="text-align: right;">Scanning rice</span>
+      </li>
+    </ul>
     <h3>Media</h3>
   </div>
 </body>

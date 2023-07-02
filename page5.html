@@ -40,7 +40,7 @@
       margin-top: 5px;
       width: 80px; /* Responsive design width */
       height: 40px; /* Responsive design height */
-      background-image: url('../assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
+      background-image: url('assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
       background-size: cover; /* Adjust image size to fit the container */
       display: inline-block;
       margin-right: 10px; /* Space to the right of the header */
@@ -144,6 +144,26 @@
       margin-right: 20px; /* Increase space between link and arrow on hover */
     }
 
+    ul.list {
+    margin-left: 2.7vw;
+    margin-right: 14vw;
+    font-size: 20px;
+  }
+
+  ul.list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    color: #0b0238;
+  }
+
+  ul.list li::before {
+    content: "\2022"; /* Bullet symbol */
+    position: absolute;
+    left: 0;
+    color: #0b0238;
+  }
+
   </style>
 </head>
 <body>
@@ -162,14 +182,24 @@
       <span style="color: #fd7e1d;">Javascript</span>
       <span style="color: #fd7e1d;">HTML5 · CSS</span>
       <span style="color: #fd7e1d;">React.JS · Git · Figma</span>
+      <span style="color: #0b0238;">December 2022 - Present</span>
     </div>
-    <h2>Website</h2>
+    <h2 style="margin-top: 0.5vh;">Website</h2>
     <p>
       <span style="margin-right: 5px; font-size: 20px;">Related Links:</span>
       <a href="https://www.github.com/ufwece" target="_blank" class="rlinks">Still in Development</a>
       <a href="http://www.wece.ece.ufl.edu/" target="_blank" class="rlinks">Current Site</a>
     </p>
-    <p class="bio">This CRM application is an all encompassing experience for reaching out and maintaining connections with professional, family, and friendly contacts. Using the OAuth2 API, all users may sign in with their Google Account. Users may import contacts from their phone or enter them manually, adding additional information to create a well rounded character which can be used to create more personal messages. Integrated with Google's PaLM2 API, Contacted utilizes its large language model to auto generate messages that the user may send to any contact in the application. The user may also dictate a time frequency, after which they will be reminded via push notifications that they should leave a friendly message to that person. A user may send messages straight from the application, or copy paste a message to a third party app.</p>
+    <p class="bio">WECE's website centralizes the clubs information and encourages women to involve themeselves in electrical and computer engineering.</p>
+    <p class="bio" style="margin-top: 5vh;">Using Figma, our development team designed a wireframe which optimizes the flaws of the past website with a new, dynamic user interface. We began development with React using Git and host weekly meetings to discuss roadblocks and monitor progress. The new website is currenly still in development.</p>
+    <p class="bio"></p>
+    <h3>Features</h3>
+    <ul class="list">
+      <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
+        <a style="color: #fd7e1d;" href="https://legacy.reactjs.org/" target="_blank" class="rlinks">React</a>
+        <span style="text-align: right;">Development Framework</span>
+      </li>
+    </ul>
     <h3>Media</h3>
   </div>
 </body>
