@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Work</title>
+  <style>
+
+    @keyframes scrollText {
+          0% {
+            transform: translateX(0); /* Start from the initial position */
+          }
+          50% {
+            transform: translateX(-25%); /* Scroll text to the left by 100% of its width */
+          }
+          100% {
+            transform: translateX(0); /* Scroll back to the initial position */
+          }
+        }
+
+    /* Other styles */
+    body {
+      background-color: #cfe8ff; /* Baby blue background */
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 0; /* Remove default body margin */
+    }
+    
+    nav {
+      background-color: #0b0238; /* Orange background */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .name-and-label {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #fd7e1d; /* Black font color */
+      font-weight: normal;
+      margin-right: 3.2vw;
+    }
+    
+    .content {
+      padding: 20px;
+    }
+
+    .header-design {
+      margin-top: 5px;
+      width: 80px; /* Responsive design width */
+      height: 40px; /* Responsive design height */
+      background-image: url('assets/skeleton.png'); /* Replace 'your-image.png' with the path to your PNG image */
+      background-size: cover; /* Adjust image size to fit the container */
+      display: inline-block;
+      margin-right: 10px; /* Space to the right of the header */
+      margin-left: 5px;
+    }
+    
+    .work-label {
+      font-weight: normal;
+      font-size: 20px;
+      color: #ffffff;
+      margin-top: 3px;
+      margin-right: 3.2vw;
+    }
+
+
+    
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Display two columns */
+      grid-gap: 20px; /* Add gap between grid items */
+      padding: 0;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+    
+    li {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    a {
+      margin-left: 2.7vw;
+      margin-right: 0vw;
+      display: block; /* Convert the link to a block element */
+      text-decoration: none;
+      text-align: start;
+      color: #000; /* Black font color */
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    a.button {
+      height: clamp(200px, 50vw, 175px);
+      width: clamp(300px, 50vw, 525px);
+      display: block;
+      text-decoration: none;
+      border-width: 1.5px;
+      border-style: solid;
+      border-color: #0b0238;
+      background-color: rgba(255, 255, 255, 0);
+      padding: 40px 60px;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      transition: box-shadow 0.3s;
+      overflow: hidden;
+    }
+
+    a.buttona {
+      height: clamp(200px, 50vw, 175px);
+      width: clamp(300px, 50vw, 525px);
+      display: block;
+      text-decoration: none;
+      border-width: 1.5px;
+      border-style: solid;
+      border-color: #fd7e1d;
+      background-color: rgba(255, 255, 255, 0);
+      padding: 40px 60px;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      transition: box-shadow 0.3s;
+      overflow: hidden;
+    }
+
+    a.buttona:hover,
+    a.button:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    a.buttona p.scroll,
+    a.button p.scroll {
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 98%;
+    }
+
+    a.buttona:hover p.scroll,
+    a.button:hover p.scroll {
+      animation: scrollText 10s linear infinite;
+      width: max-content;
+    }
+    @media (max-width: 925px) {
+      ul {
+        grid-template-columns: 1fr; /* Display a single column */
+        overflow: hidden;
+      }
+    }
+
+    p {
+      color: #0b0238;
+      margin-top: 6vh;
+      text-align: start;
+      font-weight: normal;
+    }
+
+    p.scroll {
+      color: #0b0238;
+      margin-bottom: 7vh;
+      font-size: 25px;
+    }
+
+    p.wece {
+      color: #0b0238;
+      margin-top: 3vh;
+      text-align: start;
+      font-weight: normal;
+    }
+
+    h2 {
+      color: #0b0238;
+      text-align: start;
+      margin-top: 4vh;
+      font-size: 40px;
+    }
+
+    h2.wece {
+      color: #0b0238;
+      text-align: start;
+      font-size: 30px;
+      margin-top: 3vh;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html"><span class="header-design"></span></a>
+    <div class="name-and-label">
+      <a href="index.html">Kristian Fischer</a>
+      <span class="work-label">Work</span>
+    </div>
+  </nav>
+  
+  <div class="content">
+    <ul>
+      <li>
+        <a href="contacted.html" class="buttona">
+          <p class="scroll">React Native · Expo · TypeScript · APIs · PaLM · OAuth2 · Tailwind</p>
+          <h2>Contacted</h2>
+          <p>CRM application reminding users to reach out to their specified contacts, based on set time frequencies.</p>
+        </a>
+      </li>
+      <li>
+        <a href="wece.html" class="button">
+          <p class="scroll">React.JS · JavaScript · Figma · UX/UI Design · Team Development</p>
+          <h2 class="wece">Women in Electrical and Computer Engineering</h2>
+          <p class="wece">Website promoting womens involvement in computer/electrical engineering, who currently make up only 20% of the two majors.</p>
+        </a>
+      </li>
+      <li>
+        <a href="garduino.html" class="button">
+          <p class="scroll">Arduino · C++ · IoT · Hardware</p>
+          <h2>Garduino</h2>
+          <p>Self watering garden system used to monitor soil moisture daily, and provide the necessary amount of water through water pumps.</p>
+        </a>
+      </li>
+      <li>
+        <a href="research.html" class="buttona">
+          <p class="scroll">Qualtrics · Undergrad Research · Mentorship</p>
+          <h2>ChatGPT Survey</h2>
+          <p>Climate survey gauging the change in public perception of Artificial Intelligence due to the release of ChatGPT.</p>
+        </a>
+      </li>
+      <li>
+        <a href="riceking.html" class="buttona">
+          <p class="scroll">Flutter · Dart · UX/UI Design · Mentorship</p>
+          <h2>Rice King</h2>
+          <p>Satirical productivity application which monitors your rice as it cooks, so you dont have to.</p>
+        </a>
+      </li>
+      <li>
+        <a href="bounce.html" class="button">
+          <p class="scroll">Android Studio · Java · Krita · Google Ad Mob</p>
+          <h2>Bounce!</h2>
+          <p>One tap Android mobile game, available for download on the google play store.</p>
+        </a>
+      </li>
+      <li>
+        <a href="puzzles.html" class="button">
+          <p class="scroll">SFML · C++ · PyGame · Python</p>
+          <h2>Minesweeper and Sudoko</h2>
+          <p>A recreation of the classic games Minesweeper and Sudoko, faithful to their original mechanics.</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
