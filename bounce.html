@@ -147,14 +147,13 @@
     }
 
     ul.list {
-    margin-left: 2.7vw;
     margin-right: 14vw;
     font-size: 20px;
   }
 
   ul.list li {
     position: relative;
-    padding-left: 1.5em;
+    padding-left: 0.5em;
     margin-bottom: 0.5em;
     color: #0b0238;
   }
@@ -224,6 +223,14 @@ from {opacity: .4}
 to {opacity: 1}
 }
 
+@media (max-width: 600px) {
+  .name-list {
+    margin-top: calc(-4vh + 1.5vw);
+    margin-bottom: calc(3vh + 1.5vw);
+
+  }
+}
+
   </style>
 </head>
 <body>
@@ -256,12 +263,12 @@ to {opacity: 1}
     <h3>Features</h3>
     <ul class="list">
       <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://krita.org/en/" target="_blank" class="rlinks">Krita</a>
-        <span style="text-align: right;">Graphic design</span>
+        <a style="color: #fd7e1d; text-align: left;" href="https://krita.org/en/" target="_blank" class="rlinks">Krita</a>
+        <span style="text-align: right; margin-left: 6vw;">Graphic design</span>
       </li>
       <li style="display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://admob.google.com/home/" target="_blank" class="rlinks">Google Ad Mob</a>
-        <span style="text-align: right;">Advertisements</span>
+        <a style="color: #fd7e1d; text-align: left;" href="https://admob.google.com/home/" target="_blank" class="rlinks">Google Ad Mob</a>
+        <span style="text-align: right; margin-left: 6vw;">Advertisements</span>
       </li>
       
     </ul>

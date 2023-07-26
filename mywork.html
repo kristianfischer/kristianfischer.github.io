@@ -18,6 +18,18 @@
           }
         }
 
+        @keyframes scrollText2 {
+          0% {
+            transform: translateX(0); /* Start from the initial position */
+          }
+          50% {
+            transform: translateX(-75%); /* Scroll text to the left by 100% of its width */
+          }
+          100% {
+            transform: translateX(0); /* Scroll back to the initial position */
+          }
+        }
+
     /* Other styles */
     body {
       background-color: #cfe8ff; /* Baby blue background */
@@ -149,39 +161,8 @@
 
     a.buttona:hover p.scroll,
     a.button:hover p.scroll {
-      animation: scrollText 10s linear infinite;
+      animation: scrollText 15s linear infinite;
       width: max-content;
-    }
-    @media (max-width: 925px) {
-      
-      a.button p.scroll{
-        animation: scrollText 10s linear infinite;
-        width: max-content;
-      }
-
-      a.buttona p.scroll{
-        animation: scrollText 10s linear infinite;
-        width: max-content;
-      }
-
-      ul {
-        grid-template-columns: 1fr; /* Display a single column */
-        width: 100%;
-        overflow: hidden;
-        grid-gap: 50px;
-      }
-
-      a.buttona {
-        width: 50%;
-        height: 300px;
-        margin-left: 7vw;
-      }
-
-      a.button {
-        width: 50%;
-        height: 300px;
-        margin-left: 7vw;
-      }
     }
 
     p {
@@ -217,6 +198,50 @@
       font-size: 30px;
       margin-top: 3vh;
     }
+
+    @media (max-width: 925px) {
+      
+      a.button p.scroll{
+        animation: scrollText2 20s linear infinite;
+        width: max-content;
+      }
+
+      a.buttona p.scroll{
+        animation: scrollText2 20s linear infinite;
+        width: max-content;
+      }
+
+      ul {
+        grid-template-columns: 1fr; /* Display a single column */
+        width: 100%;
+        overflow: hidden;
+        grid-gap: 50px;
+      }
+
+      a.buttona {
+        width: 50%;
+        height: 300px;
+        margin-left: 7vw;
+      }
+
+      a.button {
+        width: 50%;
+        height: 300px;
+        margin-left: 7vw;
+      }
+
+      h2 {
+        text-align: center;
+        margin-right: 2.5vw;
+      }
+
+      p {
+        text-align: center;
+        margin-right: 1vw;
+      }
+    }
+
+    
   </style>
 </head>
 <body>

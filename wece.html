@@ -147,14 +147,13 @@
     }
 
     ul.list {
-    margin-left: 2.7vw;
     margin-right: 14vw;
     font-size: 20px;
   }
 
   ul.list li {
     position: relative;
-    padding-left: 1.5em;
+    padding-left: 0.5em;
     margin-bottom: 0.5em;
     color: #0b0238;
   }
@@ -165,6 +164,14 @@
     left: 0;
     color: #0b0238;
   }
+
+  @media (max-width: 600px) {
+  .name-list {
+    margin-top: calc(-3vh + 1.5vw);
+    margin-bottom: calc(3vh + 1.5vw);
+
+  }
+}
 
   </style>
 </head>
@@ -198,8 +205,8 @@
     <h3>Features</h3>
     <ul class="list">
       <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://legacy.reactjs.org/" target="_blank" class="rlinks">React</a>
-        <span style="text-align: right;">Development Framework</span>
+        <a style="color: #fd7e1d; text-align: left" href="https://legacy.reactjs.org/" target="_blank" class="rlinks">React</a>
+        <span style="text-align: right; margin-left: 6vw;">Development Framework</span>
       </li>
     </ul>
     <h3>Media</h3>

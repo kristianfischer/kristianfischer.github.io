@@ -120,14 +120,13 @@
     }
 
     ul.list {
-    margin-left: 2.7vw;
     margin-right: 14vw;
     font-size: 20px;
   }
 
   ul.list li {
     position: relative;
-    padding-left: 1.5em;
+    padding-left: 0.5em;
     margin-bottom: 0.5em;
     color: #0b0238;
   }
@@ -224,6 +223,14 @@
   to {opacity: 1}
 }
 
+@media (max-width: 600px) {
+  .name-list {
+    margin-top: calc(-4vh + 1.5vw);
+    margin-bottom: calc(3vh + 1.5vw);
+
+  }
+}
+
   </style>
 </head>
 <body>
@@ -256,20 +263,20 @@
     <h3>Features</h3>
     <ul class="list">
       <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://oauth.net/2/" target="_blank" class="rlinks">OAuth2 API</a>
-        <span style="text-align: right;">Social authentication</span>
+        <a style="color: #fd7e1d; text-align: left" href="https://oauth.net/2/" target="_blank" class="rlinks">OAuth2 API</a>
+        <span style="text-align: right; margin-left: 6vw;">Social authentication</span>
       </li>
       <li style="display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://blog.google/technology/ai/google-palm-2-ai-large-language-model/" target="_blank" class="rlinks">PaLM2 API</a>
-        <span style="text-align: right;">AI generated messages</span>
+        <a style="color: #fd7e1d; text-align: left" href="https://blog.google/technology/ai/google-palm-2-ai-large-language-model/" target="_blank" class="rlinks">PaLM2 API</a>
+        <span style="text-align: right; margin-left: 6vw;">AI generated messages</span>
       </li>
       <li style="display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://firebase.google.com/docs/firestore" target="_blank" class="rlinks">Google Firestore</a>
-        <span style="text-align: right;">Dynamically update app data</span>
+        <a style="color: #fd7e1d; text-align: left" href="https://firebase.google.com/docs/firestore" target="_blank" class="rlinks">Google Firestore</a>
+        <span style="text-align: right; margin-left: 6vw;">Dynamically update app data</span>
       </li>
       <li style="display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://docs.expo.dev/push-notifications/overview/" target="_blank" class="rlinks">Expo Push Notifications</a>
-        <span style="text-align: right;">User engagement</span>
+        <a style="color: #fd7e1d; text-align: left;" href="https://docs.expo.dev/push-notifications/overview/" target="_blank" class="rlinks">Expo Push Notifications</a>
+        <span style="text-align: right; margin-left: 6vw;">User engagement</span>
       </li>
     </ul>
     <h3>Media</h3>

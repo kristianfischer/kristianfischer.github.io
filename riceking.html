@@ -145,14 +145,13 @@
     }
 
     ul.list {
-    margin-left: 2.7vw;
     margin-right: 14vw;
     font-size: 20px;
   }
 
   ul.list li {
     position: relative;
-    padding-left: 1.5em;
+    padding-left: 0.5em;
     margin-bottom: 0.5em;
     color: #0b0238;
   }
@@ -222,6 +221,14 @@ from {opacity: .4}
 to {opacity: 1}
 }
 
+@media (max-width: 600px) {
+  .name-list {
+    margin-top: calc(-4vh + 1.5vw);
+    margin-bottom: calc(3vh + 1.5vw);
+
+  }
+}
+
   </style>
 </head>
 <body>
@@ -253,12 +260,12 @@ to {opacity: 1}
     <h3>Features</h3>
     <ul class="list">
       <li style="margin-top: -1vh; display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://pub.dev/packages/flutter_local_notifications" target="_blank" class="rlinks">Flutter Notifications</a>
-        <span style="text-align: right;">User engagement</span>
+        <a style="color: #fd7e1d; text-align: left;" href="https://pub.dev/packages/flutter_local_notifications" target="_blank" class="rlinks">Flutter Notifications</a>
+        <span style="text-align: right; margin-left: 6vw;">User engagement</span>
       </li>
       <li style="display: flex; justify-content: space-between; align-items: center;">
-        <a style="color: #fd7e1d;" href="https://pub.dev/packages/camera" target="_blank" class="rlinks">Flutter Camera</a>
-        <span style="text-align: right;">Scanning rice</span>
+        <a style="color: #fd7e1d; text-align: left;" href="https://pub.dev/packages/camera" target="_blank" class="rlinks">Flutter Camera</a>
+        <span style="text-align: right; margin-left: 6vw;">Scanning rice</span>
       </li>
     </ul>
     <h3>Media</h3>
