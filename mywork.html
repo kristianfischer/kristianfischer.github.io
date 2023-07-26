@@ -3,6 +3,7 @@
 <head>
   <title>My Work</title>
   <link rel="icon" href="assets/design.ico" type="image/x-icon">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <style>
 
     @keyframes scrollText {
@@ -47,6 +48,10 @@
     
     .content {
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 3vw;
     }
 
     .header-design {
@@ -97,7 +102,7 @@
 
     a.button {
       height: clamp(200px, 50vw, 175px);
-      width: clamp(300px, 50vw, 525px);
+      width: clamp(225px, 28vw, 525px); 
       display: block;
       text-decoration: none;
       border-width: 1.5px;
@@ -114,7 +119,7 @@
 
     a.buttona {
       height: clamp(200px, 50vw, 175px);
-      width: clamp(300px, 50vw, 525px);
+      width: clamp(230px, 28vw, 525px);
       display: block;
       text-decoration: none;
       border-width: 1.5px;
@@ -148,9 +153,34 @@
       width: max-content;
     }
     @media (max-width: 925px) {
+      
+      a.button p.scroll{
+        animation: scrollText 10s linear infinite;
+        width: max-content;
+      }
+
+      a.buttona p.scroll{
+        animation: scrollText 10s linear infinite;
+        width: max-content;
+      }
+
       ul {
         grid-template-columns: 1fr; /* Display a single column */
+        width: 100%;
         overflow: hidden;
+        grid-gap: 50px;
+      }
+
+      a.buttona {
+        width: 50%;
+        height: 300px;
+        margin-left: 7vw;
+      }
+
+      a.button {
+        width: 50%;
+        height: 300px;
+        margin-left: 7vw;
       }
     }
 
@@ -210,7 +240,7 @@
       <li>
         <a href="wece.html" class="button">
           <p class="scroll">React.JS · JavaScript · Figma · UX/UI Design · Team Development</p>
-          <h2 class="wece">Women in Electrical and Computer Engineering</h2>
+          <h2>WECE</h2>
           <p class="wece">Website promoting womens involvement in computer/electrical engineering, who currently make up only 20% of the two majors.</p>
         </a>
       </li>
@@ -245,7 +275,7 @@
       <li>
         <a href="puzzles.html" class="button">
           <p class="scroll">SFML · C++ · PyGame · Python</p>
-          <h2>Minesweeper and Sudoko</h2>
+          <h2>Classic Puzzles</h2>
           <p>A recreation of the classic games Minesweeper and Sudoko, faithful to their original mechanics.</p>
         </a>
       </li>
