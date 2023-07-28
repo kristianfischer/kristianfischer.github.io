@@ -70,14 +70,13 @@
     }
     
     a {
-      text-decoration: none; /* Remove underline */
-      font-size: clamp(18px, 2vw, 25px); /* Responsive font size with maximum limit */
+      text-decoration: none; /* Remove underline */ /* Responsive font size with maximum limit */
       color: #0b0238; /* Black font color */
     }
     
     .link-arrow::after {
       color: #fd7e1d;
-      font-size: clamp(20px, 2vw, 30px); /* Responsive arrow size with maximum limit */
+      font-size: 30px; /* Responsive arrow size with maximum limit */
       content: "→"; /* Arrow after the link */
       margin-left: 5px; /* Space between link and arrow */
       transition: margin-left 0.3s; /* Transition effect */
@@ -90,6 +89,10 @@
     
     a:hover .link-arrow::after {
       margin-left: 20px; /* Increase space between link and arrow on hover */
+    }
+
+    a.mylink {
+      font-size: 28.5px;
     }
 
     @media (max-width: 1400px) {
@@ -127,6 +130,7 @@
     a.underline-orange {
       text-decoration: underline; /* Add underline to links */
       text-decoration-color: #fd7e1d; /* Set underline color to orange */
+      font-size: clamp(18px, 2vw, 25px);
     }
 
     p.allow-link {
@@ -144,11 +148,11 @@
     <p>I am currently enrolled at the <a href="https://cpe.eng.ufl.edu/" target="_blank" class="underline-orange">University of Florida</a>, where I study Computer Engineering with a Minor in Mathematics and a Certification in Artificial Intelligence. I am also interning as a Full Stack Developer at <a href="https://www.blackknightinc.com/" target="_blank" class="underline-orange">Black Knight</a>.</p>
     
     <ul>
-      <li><a href="mywork.html" >My Work</a><span class="link-arrow"></span></li>
-      <li><a href="assets/resume.pdf" target="_blank" >Resume</a><span class="link-arrow"></span></li>
-      <li><a href="https://www.linkedin.com/in/kristianfischer29" target="_blank" >LinkedIn</a><span class="link-arrow"></span></li>
-      <li><a href="https://www.github.com/kristianfischer" target="_blank" >Github</a><span class="link-arrow"></span></li>
-      <li><a href="mailto:kristianfischer@ufl.edu">Contact Me</a><span class="link-arrow"></span></li>
+      <li><a href="mywork.html" class="mylink">My Work</a><span class="link-arrow"></span></li>
+      <li><a href="assets/resume.pdf" target="_blank" class="mylink">Resume</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.linkedin.com/in/kristianfischer29" target="_blank" class="mylink">LinkedIn</a><span class="link-arrow"></span></li>
+      <li><a href="https://www.github.com/kristianfischer" target="_blank" class="mylink">Github</a><span class="link-arrow"></span></li>
+      <li><a href="mailto:kristianfischer@ufl.edu" class="mylink">Contact Me</a><span class="link-arrow"></span></li>
     </ul>
   </div>
 </body>
